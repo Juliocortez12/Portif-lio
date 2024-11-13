@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio - Seu Nome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="secao">
+        <div class="conteudo">
+            <img src="./IMG_4715.jpg" alt="">
+            <h1>Olá, eu sou o Julio, tenho 21 Anos</h1>
+            <p>Sou o Julio, Tenho 21 Anos, estou cursando o 5° Semestre de Analise e Desenvolvimento de Sistemas, sou muito esforçado e dedicado em tudo que eu faço, disposto sempre a aprender. Gosto muito de planejar e elaborar projetos, pensar em coisas
+                que possam melhorar o processo de execução de cada atividade dentro de uma empresa, Pode se dizer que uma das minhas maiores qualidades é a criatividade na elaboração de projetos que possam melhorar a execução do trabalho e acertibilidade.</p>
+        </div>
+    </section>
+
+    <!-- Habilidades-->
+    <section id="projetos" class="secao">
+        <div class="conteudo">
+            <h2>Habilidades</h2>
+            <p>Python, SQL E PHP, Análise de Dados, PowerBI</p>
+
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="secao">
+        <h2>Meus Projetos</h2>
+        <div class="projetos">
+            <!-- Projeto 1 -->
+            <div class="projeto">
+                <img src="./estoque.py - Visual Studio Code 12_11_2024 18_24_34.png" alt="Contagem de Estoque">
+                <h3>Contagem de Estoque com Python</h3>
+                <p>Bom, esse projeto foi pensado para facilitar o processo de contagem e trazer uma acertibilidade na contagem do estoque(exemplo uma empresa de temperos). É só uma ideia do que seria, não tem uma interface desenvolvida.</p>
+                <a href="./estoque.py - Visual Studio Code 2024-11-12 18-25-23.mp4" target="_blank">Ver mais</a>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="projeto">
+                <img src="./Captura de tela 2024-11-12 192515.png" alt="Cadastro de Clientes">
+                <h3>Cadastro de Clientes (PHP E SQL) </h3>
+                <p>Uma API de Cadastro de Clientes usando PHP e o SQL(operação CRUD),projeto da faculdade semi desenvolvido em grupo onde o beneficio dessa page seria ter um controle de todos os clientes que a empresa tem, desde o nome até a data que a empresa
+                    efetuara o pagamento.</p>
+                <a href="./Cadastro de Clientes e mais 1 página - Pessoal — Microsoft_ Edge 2024-03-23 12-47-37.mp4" target="_blank">Ver mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="secao">
+        <h2>Entre em Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 - Julio Cortez | <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> | <a href="https://github.com/seu-github" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

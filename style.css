@@ -1,0 +1,183 @@
+/* Reset básico de margens e fontes */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: #0b4e61;
+}
+
+
+/* Estilos do Header (Nav) */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Seções */
+
+.secao {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#sobre {
+    background-color: #1a0c1a;
+    border-bottom: 2px solid #ddd;
+}
+
+#projetos {
+    background-color: #1a0c1a;
+}
+
+#contato {
+    background-color: #1a0c1a;
+    border-top: 2px solid #ddd;
+}
+
+
+/* Estilos dos Projetos */
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    background-color: #1a0c1a;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 250px;
+    text-align: center;
+}
+
+.conteudo img {
+    width: 100;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.projeto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.projeto h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.projeto p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.projeto a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* Estilos do Formulário de Contato */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #1a0c1a;
+    padding: 20px;
+    border: 1px solid #1a0c1a;
+    border-radius: 8px;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projeto {
+        width: 80%;
+    }
+}
